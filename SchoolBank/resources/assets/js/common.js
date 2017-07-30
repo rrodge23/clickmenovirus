@@ -210,6 +210,8 @@ $(document).ready(function(){
             });
         }
 
+        
+
         $('#form-search').on('click',function(){
             $('#mdl-search-accid.in').modal('hide');
             console.log($('#input-accid-search').val());
@@ -541,7 +543,8 @@ $(document).ready(function(){
         
         /******************* VIEW CLIENT *********************/
         $('.btn-view-user').on('click', function(){
-           
+            
+            
             var btn = $(this);
             var id = btn.data('id');
             var frm = btn.closest('form');
@@ -563,21 +566,23 @@ $(document).ready(function(){
                    $('#lastname').val(data.lastname);
                    $('#age').val(data.age);   
                    $('#city').val(data.cityprovince);
+                   $('select[data-dropdownjs][disabled]#city + .dropdownjs > input').val(data.cityprovince);
                    $('#zipcode').val(data.zipcode);
                    $('#birthdate').val(data.birthdate);
                    $('#birthplace').val(data.birthplace);
                    $('#tel_no').val(data.tel_no);
                    $('#zipcode').val(data.zipcode);
                    $('#civilstatus').val(data.civilstatus);
+                   $('select[data-dropdownjs][disabled]#civilstatus + .dropdownjs > input').val(data.civilstatus);
                    $('#gender').val(data.gender);
+                   $('select[data-dropdownjs][disabled]#gender + .dropdownjs > input').val(data.gender);
                    $('#email').val(data.email);
                    $('#address').val(data.address);
                    $('#contact_no').val(data.contact_no);
-                   $('#department').dropdown({
-                        value:23
-                   });
                    $('#department').val(data.DID);
+                   $('select[data-dropdownjs][disabled]#department + .dropdownjs > input').val(data.dept_name);
                    $('#product').val(data.PID);
+                   $('select[data-dropdownjs][disabled]#product + .dropdownjs > input').val(data.prod_name);
                    $('#stat').val(data.stat);
                    $('#created_at').val(data.created_at);
                    $('#user_level').val(data.user_level);

@@ -37,7 +37,7 @@
                                     </div>
                                     <div class="form-group label-static  modal-width" style="margin-left: 30px !important;">
                                         <label for="birthdateAddC" class="control-label">Birthdate</label>
-                                        <input type="text" name="birthdate" id="birthdateAddC" class="datepicker form-control floating-label" placeholder="Birthdate Y-m-d">
+                                        <input type="text" name="birthdate" id="birthdateAddC" class="datepicker form-control floating-label" placeholder="Birthdate Y-m-d" style="padding-left:10px !important;">
                                         <p class="help-block">This is a hint as a <code></code></p>
                                     </div>
                                     <div class="form-group label-floating margin-left-30 modal-width">
@@ -48,17 +48,17 @@
                                     <div class="form-group modal-width margin-left-30">
                                         <label for="genderAddC">Gender</label>
                                         <select id="genderAddC" class="form-control select" name="gender">
-                                            <option value='1'>Male</option>
-                                            <option value='2'>Female</option>
+                                            <option value='Male'>Male</option>
+                                            <option value='Female'>Female</option>
                                         </select>
                                     </div>
                                     <div class="form-group modal-width margin-left-30">
                                         <label for="civil_statAddC">Civil Status</label>
                                         <select id="civil_statAddC" class="form-control select" name="civil_stat">
-                                            <option value='1'>Single</option>
-                                            <option value='2'>Married</option>
-                                            <option value='3'>Divorced</option>
-                                            <option value='4'>Widowed</option>
+                                            <option value='Single'>Single</option>
+                                            <option value='Married'>Married</option>
+                                            <option value='Divorced'>Divorced</option>
+                                            <option value='Widowed'>Widowed</option>
                                         </select>
                                     </div>
                                 </div>
@@ -332,7 +332,7 @@
                         <input type="hidden" id="created_at" name="created_at">
                         <div class="row" style="height:550px;">
                             <div class="col-md-4" style="height:100%;">
-                                <div class="box-shadow-panel" style="padding-top:10px !important;height:100%;">
+                                <div class="" style="border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding-top:10px !important;height:100%;">
                                     <div class='form-group'>
                                     <div>
                                         <h3 style="color:#009785;" class="font-product margin-left-30">ACCOUNT:</h3>
@@ -344,7 +344,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 style="color:#009785;" class="font-product margin-left-30">NAME:</h3>
+                                        <h3 style="color:#009785;margin-top:80px;" class="font-product margin-left-30">NAME:</h3>
                                     </div>
                                     <div class='form-group'>
                                         <label for='firstname' class='control-label col-md-4'>Firstname</label>
@@ -371,7 +371,7 @@
                                     <div class='form-group'>
                                         <label for='birthdate' class='control-label col-md-4'>Birthdate</label>
                                         <div class='col-md-8'>
-                                            <input disabled="disabled" type="text" name="birthdate" id="birthdate" class="datepicker mdl-user-input-update form-control mdl-user-input-update" placeholder="Birthdate Y-m-d">
+                                            <input disabled="disabled" type="text" name="birthdate" id="birthdate" class="padding-left10 datepicker mdl-user-input-update form-control mdl-user-input-update" placeholder="Birthdate Y-m-d">
                                            
                                             <span class='help-block'></code></span>
                                         </div>
@@ -387,8 +387,8 @@
                                         <label for='gender' class='control-label col-md-4'>Gender</label>
                                         <div class='col-md-8'>
                                             <select disabled="disabled" id="gender" class="form-control select mdl-user-input-update" name="gender">
-                                                <option value='1'>Male</option>
-                                                <option value='2'>Female</option>
+                                                <option value='Male'>Male</option>
+                                                <option value='Female'>Female</option>
                                             </select>
                                         </div>
                                     </div>
@@ -396,10 +396,10 @@
                                         <label for='civilstatus' class='control-label col-md-4'>Civil Status</label>
                                         <div class='col-md-8'>
                                             <select disabled="disabled" id="civilstatus" class="form-control select mdl-user-input-update" name="civilstatus">
-                                                <option value='1'>Single</option>
-                                                <option value='2'>Married</option>
-                                                <option value='3'>Divorced</option>
-                                                <option value='4'>Widowed</option>
+                                                <option value='Single'>Single</option>
+                                                <option value='Married'>Married</option>
+                                                <option value='Divorced'>Divorced</option>
+                                                <option value='Widowed'>Widowed</option>
                                             </select>
                                         </div>
                                     </div>
@@ -407,7 +407,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4" style="height:100%">
-                                <div class="box-shadow-panel" style="padding-top:10px !important;height:100%;">
+                                <div class="" style="border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding-top:10px !important;height:100%;">
                                     <div>
                                         <h3 style="color:#009785;" class="font-product margin-left-30">LOCATION:</h3>
                                     </div>
@@ -577,25 +577,31 @@
                                             <span class='help-block'>only composite numbers between 0 - 9</code></span>
                                         </div>
                                     </div>
+
                                     
                                     <div>
-                                        <h3 style="color:#009785;" class="font-product margin-left-30" style="padding-top:50px;">CONTACT:</h3>
+                                        <h3 style="color:#009785;margin-top:80px;" class="font-product margin-left-30" style="padding-top:50px;">CONTACT:</h3>
                                     </div>
+
                                     <div class='form-group'>
-                                        <label for='contact_no' class='control-label col-md-4'>Contact Number</label>
+                                        <label for='contact_no' class='control-label col-md-3'>Phone Number</label>
                                         <div class='col-md-8'>
-                                            <input disabled='disabled' type='text' class='mdl-user-input-update form-control padding-left10 ' id='contact_no' name='contact_no' required='required'>
-                                            <span class='help-block'></code></span>
+                                            
+                                            <input disabled='disabled' type="text" name="contact_no" id="contact_no" class="mdl-user-input-update form-control padding-left10 input-medium bfh-phone margin-left-30" data-format="+ (dd) ddd-dddd-ddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;width:100%;">
+                                            <span class='help-block' style="margin-left:30px;">only composite numbers between 0 - 9</code></span>
                                         </div>
                                     </div>
-                                    <div class='form-group'>
-                                        <label for='tel_no' class='control-label col-md-4'>Telephone Number</label>
+
+                                    <div class='form-group' style="margin-top:50px;">
+                                        <label for='contact_no' class='control-label col-md-3'>Telephone Number</label>
                                         <div class='col-md-8'>
-                                            <input disabled='disabled' type='text' class='mdl-user-input-update form-control padding-left10 ' id='tel_no' name='tel_no' required='required'>
-                                            <span class='help-block'></code></span>
+                                            <input disabled='disabled' type="text" name="tel_no" id="tel_no" class="mdl-user-input-update form-control padding-left10 input-medium bfh-phone margin-left-30" data-format="(ddd) ddd-dddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;width:100%;" placeholder="Telephone Number">
+                                            <span class='help-block' style="margin-left:30px;">only composite numbers between 0 - 9</code></span>
                                         </div>
                                     </div>
-                                    <div class='form-group'>
+                       
+                                    
+                                    <div class='form-group' style="margin-top:50px;">
                                         <label for='email' class='control-label col-md-4'>Email Address</label>
                                         <div class='col-md-8'>
                                             <input disabled='disabled' type='text' class='mdl-user-input-update form-control padding-left10 ' id='email' name='email' required='required'>
@@ -606,7 +612,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4" style="height:100%;">
-                                <div class="box-shadow-panel" style="padding-top:10px !important;height:100%;">
+                                <div class="" style="border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding-top:10px !important;height:100%;">
                                     <div>
                                         <h3 style="color:#009785;" class="font-product margin-left-30">Product/Department:</h3>
                                     </div>
@@ -628,7 +634,7 @@
                                     </div>
                                     <div class='form-group' style='margin-top:50px;margin-bottom:50px;'>
                                         <label for='department' class='control-label col-md-4'>Department</label>
-                                        <div class='col-md-8'>
+                                        <div class='col-md-8' id="dept">
                                             <select disabled="disabled" id="department" class="form-control select mdl-user-input-update" name="department" required="required" placeholder="Select Department">
                                                 <?php
                                                     if($mdropdowndept){
