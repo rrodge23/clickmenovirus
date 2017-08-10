@@ -2,8 +2,8 @@
     <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
 
         <div class="logo text-center">
-            <a href="" class="font-product" style="color:orange !important;font-size:22px;">
-                School Bank | EBI
+            <a href="" style="color:orange !important;font-size:22px;font-family:'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;">
+                School Banking
             </a>
         </div>
 
@@ -17,7 +17,6 @@
                     else if($_SESSION['users']['user_level'] == 3)
                         $usrLvl = "CRO";
                     else $usrLvl = "Cashier/BM";
-
 
                 ?>
                <?php
@@ -55,13 +54,13 @@
                                 <li class='$activeDept'>
                                     <a href='/view/page/departments.php'>
                                         <i class='material-icons'>view_compact</i>
-                                        <p>Departments</p>
+                                        <p>Section</p>
                                     </a>
                                 </li>
                                 <li class='$activeProd'>
                                     <a href='/view/page/products.php'>
                                         <i class='material-icons'>donut_small</i>
-                                        <p>Products</p>
+                                        <p>Client Type</p>
                                     </a>
                                 </li>
                                
@@ -107,7 +106,7 @@
     </div>
 
     <div class="main-panel" style="background-color:#F8F8F9;">
-        <nav class="box-shadow navbar navbar-transparent navbar-absolute" style="background-color: #F88158;">
+        <nav class="box-shadow navbar navbar-transparent navbar-absolute" style="background-color:#260552;">
             <div class="container-fluid" style="height:50px !important;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse">
@@ -131,8 +130,9 @@
                                             <i class="material-icons">person</i>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li id="logout"><a style="font-weight:bold;font-size:13px !important;" href="/app/controller/auth/logout.php" class="font-product" style="color:#009785;">Logout</a></li>                                
+                                            <li id="chnge_pass"><a style="font-weight:bold;font-size:13px !important;" href="/view/page/userDailyTrans.php" class="font-product" style="color:#009785;">My Daily Transaction</a></li>                                
                                             <li id="chnge_pass"><a style="font-weight:bold;font-size:13px !important;" href="/view/auth/changePass.php" class="font-product" style="color:#009785;">Change Password</a></li>                                
+                                            <li id="logout"><a style="font-weight:bold;font-size:13px !important;" href="/app/controller/auth/logout.php" class="font-product" style="color:#009785;">Logout</a></li>                                
                                         </ul>
                                     </li>
                                 </td>

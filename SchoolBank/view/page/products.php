@@ -21,8 +21,8 @@
                 <thead>
                     <tr>       
                         
-                        <td class="text-center font-roboto color-a2">PID</td>
-                        <td class="text-center font-roboto color-a2">Product Name</td>
+                        <td class="text-center font-roboto color-a2">CTID</td>
+                        <td class="text-center font-roboto color-a2">Client Type</td>
                         <td class="text-center font-roboto color-a2">Interest Rate</td>
                         <td class="text-center font-roboto color-a2">Action</td>
                         

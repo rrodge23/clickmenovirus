@@ -156,5 +156,20 @@
 				return false;
 			}
         }
+
+		public function userBalance($data=NULL){
+            $con = $this->conn;
+            $sql = "SELECT * FROM users LEFT JOIN transaction ON users.UID = transaction.user_id WHERE users.UID LIKE '{$data}' AND transaction.trans_date LIKE '".date('Y-m-d')."%' ";
+            $result = $con->query($sql);
+            $con->close();
+
+			if($result->num_rows > 0)
+			{
+				return $result;
+			}
+			return false;
+        }
+
+
     }
 ?>

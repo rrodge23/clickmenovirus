@@ -127,8 +127,8 @@
                 return false;
             }
             $total_amt = $data['withdrawal_totbal']-$data['withdrawal_amount'];
-            $sql = "INSERT INTO transaction(ACID,trans_type,trans_date,amount,teller,total_amount) 
-                    VALUES('{$data['accIdWithdrawal']}','2','{$date}','{$data['withdrawal_amount']}','{$data['withdrawal_teller']}','{$total_amt}')";
+            $sql = "INSERT INTO transaction(ACID,trans_type,trans_date,amount,teller,total_amount,user_id) 
+                    VALUES('{$data['accIdWithdrawal']}','2','{$date}','{$data['withdrawal_amount']}','{$data['withdrawal_teller']}','{$total_amt}','{$_SESSION['users']['UID']}')";
             $result = $con->query($sql);
             if($result){
                 return true;
@@ -142,8 +142,8 @@
             $date = date("Y-m-d H:i:s");
             
             $total_amt = $data['deposit_amount']+$data['deposit_totbal'];
-            $sql = "INSERT INTO transaction(ACID,trans_type,trans_date,amount,teller,total_amount) 
-                    VALUES('{$data['ACCID']}','1','{$date}','{$data['deposit_amount']}','{$data['deposit_teller']}','{$total_amt}')";
+            $sql = "INSERT INTO transaction(ACID,trans_type,trans_date,amount,teller,total_amount,user_id) 
+                    VALUES('{$data['ACCID']}','1','{$date}','{$data['deposit_amount']}','{$data['deposit_teller']}','{$total_amt}','{$_SESSION['users']['UID']}')";
             $result = $con->query($sql);
             if(!$result){
                 return false;

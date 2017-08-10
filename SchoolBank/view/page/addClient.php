@@ -18,8 +18,8 @@
                         <tr>       
                             <td class="text-center font-roboto color-a2">Account Number</td>
                             <td class="text-center font-roboto color-a2">NAME</td>
-                            <td class="text-center font-roboto color-a2">DEPARTMENT</td>
-                            <td class="text-center font-roboto color-a2">PRODUCT</td>
+                            <td class="text-center font-roboto color-a2">SECTION</td>
+                            <td class="text-center font-roboto color-a2">CLIENT TYPE</td>
                             <td class="text-center font-roboto color-a2">ACTION</td>
                         </tr>
                 </thead>

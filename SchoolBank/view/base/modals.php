@@ -7,55 +7,68 @@
             <div class="modal-content">
                 <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
                    
-                    <h4 class="modal-title font-product color-white">ACCOUNT INFO</h4>
+                    <h4 class="modal-title font-product color-white">ACCOUNT ACTIVATION</h4>
                 </div>
                 
                 <div class="container-fluid">
                     <br>
                     <form method="POST" action="" onsubmit="return false;" id="add-client-form">
                     <input type="hidden" value="addClient" name="mode">
-                        <div class="row" style="height:675px;">
-                            <div class="col-md-4" style="height:100%;">
-                                <div class="" style="padding-top:10px !important;height:100%;">
-                                    <div>
-                                        <h3 style="color:#009785;" class="font-product margin-left-30">NAME:</h3>
+                        <div class="col-md-12 col-lg-12">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 style="color:#009785;" class="font-product">NAME:</h3>
                                     </div>
-                                    
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row" style="margin-top:50px;">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="firstnameAddC" class="control-label">Firstname</label>
-                                        <input type="text" class="form-control" id="firstnameAddC" name="firstname" required="required">
+                                        <input type="text" class="modal-width form-control" id="firstnameAddC" name="firstname" required="required">
                                         <span class="help-block"></span>
-                                    </div>
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                    </div>   
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="lastnameAddC" class="control-label">Lastname</label>
-                                        <input type="text" class="form-control" id="lastnameAddC" name="lastname" required="required">
+                                        <input type="text" class="modal-width form-control" id="lastnameAddC" name="lastname" required="required">
                                         <span class="help-block"></span>
                                     </div>
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="middlenameAddC" class="control-label">Middlename</label>
-                                        <input type="text" class="form-control" id="middlenameAddC" name="middlename" required="required">
+                                        <input type="text" class="modal-width form-control" id="middlenameAddC" name="middlename" required="required">
                                         <span class="help-block"></span>
                                     </div>
-                                    <div class="form-group label-static  modal-width" style="margin-left: 30px !important;">
-                                        <label for="birthdateAddC" class="control-label">Birthdate</label>
-                                        <input type="text" name="birthdate" id="birthdateAddC" class="datepicker form-control floating-label" placeholder="Birthdate Y-m-d" style="padding-left:10px !important;">
-                                        <p class="help-block">This is a hint as a <code></code></p>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-static col-md-12" style="">
+                                        <label for="birthdateAddC" class="control-label" style="padding-left:10px;">Birthdate Y/M/D</label>
+                                        <input type="text" name="birthdate" id="birthdateAddC" class="modal-width datepicker form-control floating-label" style="padding-left:10px !important;" placeholder="">
+                                        <p class="help-block"><code></code></p>
                                     </div>
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="birthplaceAddC" class="control-label">Birthplace</label>
-                                        <input type="text" class="form-control" id="birthplaceAddC" name="birthplace" required="required">
+                                        <input type="text" class="modal-width form-control" id="birthplaceAddC" name="birthplace" required="required">
                                         <span class="help-block"></span>
                                     </div>
-                                    <div class="form-group" style="margin-left:20px;width:92%;">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12" style="">
                                         <label for="genderAddC">Gender</label>
-                                        <select id="genderAddC" class="form-control select" name="gender">
+                                        <select id="genderAddC" class="modal-width form-control select" name="gender">
                                             <option value='Male'>Male</option>
                                             <option value='Female'>Female</option>
                                         </select>
                                     </div>
-                                    <div class="form-group" style="margin-left:20px;width:92%;">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12" style="">
                                         <label for="civil_statAddC">Civil Status</label>
-                                        <select id="civil_statAddC" class="form-control select" name="civil_stat">
+                                        <select id="civil_statAddC" class="modal-width form-control select" name="civil_stat">
                                             <option value='Single'>Single</option>
                                             <option value='Married'>Married</option>
                                             <option value='Divorced'>Divorced</option>
@@ -64,19 +77,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="height:100%">
-                                <div class="" style="padding-top:10px !important;height:100%;">
-                                    <div>
-                                        <h3 style="color:#009785;" class="font-product margin-left-30">LOCATION:</h3>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 style="color:#009785;" class="font-product">LOCATION:</h3>
                                     </div>
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row" style="margin-top:50px;">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="addressAddC" class="control-label">Address</label>
-                                        <input type="text" class="form-control" id="addressAddC" name="address" required="required">
+                                        <input type="text" class="modal-width form-control" id="addressAddC" name="address" required="required">
                                         <span class="help-block"></span>
                                     </div>
-                                    <div class="form-group" style="margin-left:4.5%;padding:0 !important;width:92%;">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12" style="">
                                         <label for="cityAddC">City/Province</label>
-                                        <select id="cityAddC" class="form-control select" name="city">
+                                        <select id="cityAddC" class="modal-width form-control select" name="city">
                                             <option value="Davao City">Davao City</option>
                                             <option value="Surigao City">Surigao City</option>
                                             <option value="Caloocan">Caloocan</option>
@@ -225,37 +242,47 @@
                                             <option value="Zamboanga City">Zamboanga City</option>
                                         </select>
                                     </div>
-
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="zipcodeAddC" class="control-label">Zip Code</label>
-                                        <input type="text" class="form-control" id="zipcodeAddC" name="zipcode" required="required" pattern="[0-9]{4}">
+                                        <input type="text" class="modal-width form-control" id="zipcodeAddC" name="zipcode" required="required" pattern="[0-9]{4}">
                                         <span class="help-block">only composite numbers between 0 - 9</span>
                                     </div>
-                                    <div style="padding-top:20px;padding-bottom:20px;">
-                                        <h3 style="color:#009785;" class="font-product margin-left-30">CONTACT:</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 style="color:#009785;" class="font-product">CONTACT:</h3>
                                     </div>
-                                    <div>
-                                        <input type="text" name="contact_no" id="contact_noAddC" class="input-medium bfh-phone margin-left-30 modal-width" data-format="+ (dd) ddd-dddd-ddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;">
+                                </div>
+                                <div class="row" style="margin-top:50px;margin-bottom:50px;">
+                                    <div class="col-md-12">
+                                        <input type="text" name="contact_no" id="contact_noAddC" class="input-medium bfh-phone modal-width" data-format="+ (dd) ddd-dddd-ddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;">
                                     </div>
-                                    <div style="margin-top:50px;">
-                                        <input type="text" name="tel_no" id="tel_noAddC" class="input-medium bfh-phone margin-left-30 modal-width" data-format="(ddd) ddd-dddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;" placeholder="Telephone Number">
+                                </div>
+                                <div class="row" style="margin-bottom:50px;">
+                                    <div class="col-md-12">
+                                        <input type="text" name="tel_no" id="tel_noAddC" class="input-medium bfh-phone modal-width" data-format="(ddd) ddd-dddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;" placeholder="Telephone Number">
                                     </div>
-                                    
-                                    <div class="form-group label-floating margin-left-30 modal-width">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group label-floating col-md-12">
                                         <label for="emailAddC" class="control-label">Email address</label>
-                                        <input type="email" class="form-control" id="emailAddC" name="email" required="required">
+                                        <input type="email" class="modal-width form-control" id="emailAddC" name="email" required="required">
                                         <span class="help-block">Please enter a valid email address</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="height:100%;">
-                                <div class="" style="padding-top:10px !important;height:100%;">
-                                    <div>
-                                        <h3 style="color:#009785;" class="font-product margin-left-30">Product/Department:</h3>
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h3 style="color:#009785;" class="font-product">Department:</h3>
                                     </div>
-                                    <div class="form-group modal-width" style="margin-left:30px !important;">
-                                        <label for="productAddC">Product</label>
-                                        <select id="productAddC" class="form-control select" name="product" >
+                                </div>
+                                <div class="row" style="margin-top:50px;">
+                                    <div class="form-group col-md-12" style="">
+                                        <label for="productAddC">Client Type</label>
+                                        <select id="productAddC" class="modal-width form-control select" name="product" >
                                             <?php
                                                 if($ddprod){
                                                     while($p = $ddprod->fetch_assoc()){
@@ -267,9 +294,11 @@
                                             ?>
                                         </select>
                                     </div>
-                                    <div class="form-group modal-width" style="margin-left:30px !important;">
-                                        <label for="departmentAddC">Department</label>
-                                        <select id="departmentAddC" class="form-control select" name="department" required="required" placeholder="Select Department">
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-12" style="">
+                                        <label for="departmentAddC">Section</label>
+                                        <select id="departmentAddC" class="modal-width form-control select" name="department" required="required" placeholder="Select Section">
                                             <?php
                                                 if($dept){
                                                     while($d = $dept->fetch_assoc()){
@@ -285,7 +314,6 @@
                             </div>
                         </div>
 
-                            
                         <div class="modal-footer">
                             
                             <table style="float:right !important;">
@@ -628,10 +656,10 @@
                             </div>
                             <div class="col-md-4">
                                 <div>
-                                    <h3 style="color:#009785;" class="font-product margin-left-30">Product/Department:</h3>
+                                    <h3 style="color:#009785;" class="font-product margin-left-30">Department:</h3>
                                 </div>
                                 <div class='form-group' style='margin-top:50px;margin-bottom:50px;'>
-                                    <label for='product' class='control-label col-md-4'>Product</label>
+                                    <label for='product' class='control-label col-md-4'>Client Type</label>
                                     <div class='col-md-8'>
                                         <select disabled="disabled" id="product" class="form-control select mdl-user-input-update" name="product" placeholder="Select Product">
                                             <?php
@@ -647,7 +675,7 @@
                                     </div>
                                 </div>
                                 <div class='form-group' style='margin-top:50px;margin-bottom:50px;'>
-                                    <label for='department' class='control-label col-md-4'>Department</label>
+                                    <label for='department' class='control-label col-md-4'>Section</label>
                                     <div class='col-md-8' id="dept">
                                         <select disabled="disabled" id="department" class="form-control select mdl-user-input-update" name="department" required="required" placeholder="Select Department">
                                             <?php
@@ -697,7 +725,7 @@
         <div class="modal-dialog">
             
             <div class="modal-content" style="width: 140% !important;">
-                <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">INFO</h4>
                 </div>
@@ -718,7 +746,7 @@
                                     </td>
                                     <td>    
                                         <div class='form-group'>
-                                            <label for='dept_name' class='control-label col-md-4'>Department Name</label>
+                                            <label for='dept_name' class='control-label col-md-4'>Section</label>
                                             <div class='col-md-8'>
                                                 <input type='text' class='form-control mdl-dept-input-update padding-left10 ' id='dept_name' name='dept_name' required='required'>
                                                 <span class='help-block'></code></span>
@@ -764,9 +792,9 @@
 
             
             <div class="modal-content" style="width: 140% !important;">
-                <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
                    
-                    <h4 class="modal-title float-left color-white font-product">INFO</h4>
+                    <h4 class="modal-title float-left color-white font-product">Add Section</h4>
                 </div>
                 
                 <div class="container-fluid">
@@ -774,11 +802,15 @@
                         <input type="hidden" name="mode" value="addDept">
                         <div class="container inline" style="width: 45%;">
                             
-                            <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
-                                <label for="i5i" class="control-label" >Department Name</label>
-                                <input type="text" class="form-control" id="i5i" name="actAcc_dn" required="required">
-                                <span class="help-block"></span>
-                            </div>        
+                            <div class="row" style="margin-top:50px;">
+                                <div class="col-md-12">
+                                    <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
+                                        <label for="i5i" class="control-label" >Enter Section</label>
+                                        <input type="text" class="form-control" id="i5i" name="actAcc_dn" required="required">
+                                        <span class="help-block"></span>
+                                    </div>   
+                                </div>
+                            </div>     
                             
                         </div>                       
                     
@@ -812,24 +844,28 @@
             
             <div class="modal-content" style="width: 140% !important;">
 
-                <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
                    
-                    <h4 class="modal-title float-left color-white font-product">INFO</h4>
+                    <h4 class="modal-title float-left color-white font-product">Add Client Type</h4>
                 </div>
                 
                 <div class="container-fluid">
                     <form method="POST" action="/app/controller/mdl-prodView.php" id="add-product-form" onsubmit="return false;">
                         <input type="hidden" value="addProd" name="mode">
                         <div class="container inline" style="width: 45%;">
-                            <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
-                                <label for="i5i" class="control-label" >Product Name</label>
-                                <input type="text" class="form-control" id="i5i" name="actAcc_pn" required="required">
-                                <span class="help-block"></span>
-                            </div>        
-                             <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
-                                <label for="i5i" class="control-label" >Interest Rate</label>
-                                <input type="text" class="form-control" id="i5i" name="actAcc_ir" required="required" pattern="[0-9.]{1,3}">
-                                <span class="help-block"></span>
+                            <div class="row" style="margin-top:50px;">
+                                <div class="col-md-5">
+                                    <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
+                                        <label for="i5i" class="control-label" >Client Type</label>
+                                        <input type="text" class="form-control" id="i5i" name="actAcc_pn" required="required">
+                                        <span class="help-block"></span>
+                                    </div>        
+                                    <div class="form-group label-floating margin-left-30" style="width: 210% !important;">
+                                        <label for="i5i" class="control-label" >Interest Rate</label>
+                                        <input type="text" class="form-control" id="i5i" name="actAcc_ir" required="required" pattern="[0-9.]{1,3}">
+                                        <span class="help-block">Composit numbers between 0-9</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>                       
                     
@@ -884,7 +920,7 @@
                             <tr>
                                 <td>
                                     <div class='form-group'>
-                                        <label for='DID' class='control-label col-md-4'>Product Name</label>
+                                        <label for='DID' class='control-label col-md-4'>Client Type</label>
                                         <div class='col-md-8'>
                                             <input type='text' class=' form-control padding-left10 ' id='prod_name' name='prod_name' required='required'>
                                             <span class='help-block'></code></span>
@@ -1113,6 +1149,7 @@
                     <input type="hidden" name="mode" value="transPostDeposit">
                     <input type="hidden" name="status" id="mdl_deposit_status">
                     <input type="hidden" name="AID" id="mdl_deposit_AID">
+                    <input type="hidden" name="UID" id="mdl_deposit_UID">
                     <input id="deposit_teller" type="hidden" name="deposit_teller">
                     <div class="row" style="margin-top:50px;">
                         <div class="col-md-12" style="">
@@ -1137,14 +1174,14 @@
                                             </div>
                                         </div>
                                         <div class='form-group' style="margin:0 !important;">
-                                            <label for='deposit_dept' class='control-label col-md-4'>Department</label>
+                                            <label for='deposit_dept' class='control-label col-md-4'>Section</label>
                                             <div class='col-md-8'>
                                                 <input readonly='readonly' type='text' class='padding-left10 modal-width form-control padding-left10 ' id='deposit_dept' name='deposit_dept'>
                                                 <span class='help-block'></code></span>
                                             </div>
                                         </div>
                                         <div class='form-group'>
-                                            <label for='deposit_prod' class='control-label col-md-4'>Product</label>
+                                            <label for='deposit_prod' class='control-label col-md-4'>Client Type</label>
                                             <div class='col-md-8'>
                                                 <input readonly='readonly' type='text' class='modal-width form-control padding-left10 ' id='deposit_prod' name='deposit_prod' required='required'>
                                                 <span class='help-block'></code></span>
@@ -1156,7 +1193,7 @@
                                     <div class='form-group'>
                                         <label for='deposit_totbal' class='control-label col-md-4'>Total Balance</label>
                                         <div class='col-md-8'>
-                                            <input readonly='readonly' type='text' class='text-center modal-width form-control padding-left10 ' id='deposit_totbal' name='deposit_totbal'>
+                                            <input readonly='readonly' type='text' class='text-center modal-width form-control padding-left10' style='font-size:18px;' id='deposit_totbal' name='deposit_totbal'>
                                             <span class='help-block'></code></span>
                                         </div>
                                     </div>
@@ -1188,9 +1225,9 @@
                                             </div>
                                         </div>
                                         <div class='form-group'>
-                                            <label for='deposit_amounts' class='control-label col-md-4'>Transaction Amount</label>
+                                            <label for='deposit_amounts' class='control-label col-md-4' style='font-size:20px;'>Amount</label>
                                             <div class='col-md-8'>
-                                                <input tabindex="1" type='text' class='form-control padding-left10' id='deposit_amount' name='deposit_amount' placeholder="Enter Amount" pattern="[.0-9]{1,100}" required="required" autofocus="autofocus">
+                                                <input tabindex="1" type='text' style='font-size:20px;' class='form-control padding-left10' id='deposit_amount' name='deposit_amount' placeholder="Enter Amount" pattern="[.0-9]{1,100}" required="required" autofocus="autofocus">
                                                 <span class='help-block'></code>numbers between 0-9. should not lesser than 1</span>
                                             </div>
                                         </div>
@@ -1239,6 +1276,7 @@
                     <form method="POST" action="/app/controller/mdl-clientView.php" id="post-withdrawal-form" onsubmit="return false;">
                     <input type="hidden" name="mode" value="transPostWithdrawal">
                     <input type="hidden" id="withdrawal_teller" name="withdrawal_teller">
+                    <input type="hidden" id="userBalance" name="userBalance">
                     <div class="row" style="margin-top:50px;">
                         <div class="col-md-12" style="">
                             <div class="col-md-6">
@@ -1262,14 +1300,14 @@
                                             </div>
                                         </div>
                                         <div class='form-group' style="margin:0 !important;">
-                                            <label for='withdrawal_dept' class='control-label col-md-4'>Department</label>
+                                            <label for='withdrawal_dept' class='control-label col-md-4'>Section</label>
                                             <div class='col-md-8'>
                                                 <input readonly='readonly' type='text' class='padding-left10 modal-width form-control padding-left10 ' id='withdrawal_dept' name='withdrawal_dept'>
                                                 <span class='help-block'></code></span>
                                             </div>
                                         </div>
                                         <div class='form-group'>
-                                            <label for='withdrawal_prod' class='control-label col-md-4'>Product</label>
+                                            <label for='withdrawal_prod' class='control-label col-md-4'>Client Type</label>
                                             <div class='col-md-8'>
                                                 <input readonly='readonly' type='text' class='modal-width form-control padding-left10 ' id='withdrawal_prod' name='withdrawal_prod' required='required'>
                                                 <span class='help-block'></code></span>
@@ -1281,7 +1319,7 @@
                                     <div class='form-group'>
                                         <label for='withdrawal_totbal' class='control-label col-md-4'>Total Balance</label>
                                         <div class='col-md-8'>
-                                            <input readonly='readonly' type='text' class='text-center modal-width form-control padding-left10 ' id='withdrawal_totbal' name='withdrawal_totbal'>
+                                            <input readonly='readonly' type='text' style='font-size:18px !important;' class='text-center modal-width form-control padding-left10 ' id='withdrawal_totbal' name='withdrawal_totbal'>
                                             <span class='help-block'></code></span>
                                         </div>
                                     </div>
@@ -1313,9 +1351,9 @@
                                             </div>
                                         </div>
                                         <div class='form-group'>
-                                            <label for='withdrawal_amounts' class='control-label col-md-4'>Transaction Amount</label>
+                                            <label for='withdrawal_amounts' class='control-label col-md-4' style='font-size:20px;'>Amount</label>
                                             <div class='col-md-8'>
-                                                <input tabindex="1" type='text' class='form-control padding-left10' id='withdrawal_amount' name='withdrawal_amount' placeholder="Enter Amount" pattern="[.0-9]{1,100}" required="required" autofocus="autofocus">
+                                                <input tabindex="1" type='text' class='form-control padding-left10' style='font-size:20px;' id='withdrawal_amount' name='withdrawal_amount' placeholder="Enter Amount" pattern="[.0-9]{1,100}" required="required" autofocus="autofocus">
                                                 <span class='help-block'></code>numbers between 0-9. should not lesser than 1</span>
                                             </div>
                                         </div>
@@ -1439,14 +1477,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="i5ps" class="control-label col-md-3">Product</label>
+                                    <label for="i5ps" class="control-label col-md-3">Client Type</label>
                                     <div class="col-md-8">
                                         <input style="padding-left:10px;color:#009785;" readonly="readonly" type="text" class="form-control font-product" id="viewClientTransProduct" name="prod_name">
                                         <span class="help-block"></code></span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="i5ps" class="control-label col-md-3">Department</label>
+                                    <label for="i5ps" class="control-label col-md-3">Section</label>
                                     <div class="col-md-8">
                                         <input style="padding-left:10px;color:#009785;" readonly="readonly" type="text" class="form-control font-product" id="viewClientTransDepartment" name="dept_name">
                                         <span class="help-block"></code></span>
@@ -1492,7 +1530,7 @@
                         <table style="float:right !important;">
                             <tr>
                                 <td>
-                                        <button style="margin-left:10px !important;margin-right10px!important;"rel="tooltip" data-original-title="Close" type="submit" class="btn btn-raised btn-secondary" data-dismiss="modal">
+                                    <button style="margin-left:10px !important;margin-right10px!important;"rel="tooltip" data-original-title="Close" type="submit" class="btn btn-raised btn-secondary" data-dismiss="modal">
                                         <i class="material-icons">close</i>
                                     </button>
                                 </td>

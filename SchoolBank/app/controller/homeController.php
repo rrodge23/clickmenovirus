@@ -78,14 +78,22 @@
 
     ///*************** END TRANSACTION *********************///
 
+    ///*************** USER DAILY TRANSACTION *********************///
+    $tmp = new modelUser();
+    $userBalance = $tmp->userBalance($_SESSION['users']['UID']);
+    if($userBalance){
+        $userRunningBalance = 0;
+        while($bal = $userBalance->fetch_assoc()){
+            if($bal['trans_type'] == 1){
+                $userRunningBalance += $bal['amount']; 
+            }else{
+                $userRunningBalance -= $bal['amount'];
+            }
+        }
+        
+    }
 
-    ///*************** CLIENT TRANSACTION *********************///
-
-    /************** ADD PRODUCT *****************/
-
-    /************** ADD PRODUCT *****************/
-
-    ///*************** END CLIENT TRANSACTION *********************///
-
-
+    $tmp = new modelUser();
+    $userDailyTransactionTableList = $tmp->userBalance($_SESSION['users']['UID']);
+    ///*************** END USER DAILY TRANSACTION *********************///
 ?>

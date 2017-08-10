@@ -4,14 +4,7 @@
     
 ?>
     
-    <nav class="navbar navbar-info" style="background-color:#009785;">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"></button>
-               
-            </div>
-        </div>
-    </nav>
+   
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -19,10 +12,8 @@
                     
                 </div>
                 <div class="col-md-6 container-fluid">                            
-                    <div class="card" style="background-color: rgba(255,255,255,0.5)">
-                        <div class="card-header" data-background-color="#009785">
-                            <h4><center>School Bank</center></h4>
-                        </div>
+                    <div class="card" style="background-color: rgba(255,255,255,0.5);margin-top:10%;">
+                      
                         <div class="card-content">
                             <form method="post" action="/app/controller/mdl-accView.php">
                                 <div class="form-group label-floating">
@@ -38,7 +29,7 @@
                                     <input id="renewpass" type="password" name="renewpass" class="form-control">
                                 </div>
                                 <div>
-                                    <button data-id="<?=$_SESSION['users']['UID']; ?>" id="btn-changepass" style="background-color: #009785;" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal">CHANGE PASSWORD</button>
+                                    <button data-id="<?=$_SESSION['users']['UID']; ?>" id="btn-changepass" style="background-color: #260552;" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal">CHANGE PASSWORD</button>
                                 </div>
                             </form>
                         </div>

@@ -31,7 +31,6 @@
                                                 );
                         if($result['status'] == "active"){
                             header('location:'. VIEW . 'page/home.php');
-                            
                         }else{
                             
                             header('location:'. VIEW . 'auth/changePass.php');
@@ -54,12 +53,11 @@
         
         if($tmp->message == "Error")
         {
-            $loginMessage = "<i class='material-icons'>warning</i><p>Invalid Login Details</p>";
+            $loginMessage = "<i class='material-icons' style='margin-right:10px;float:left;'>warning</i><p style='float:left;'>Invalid Login Details</p>";
         }else
         {
             $loginMessage = "";
         }
     }
-    
     
 ?>

@@ -58,6 +58,7 @@
                                             <i class='material-icons'>delete</i>
                                         </button>
                                     </form>
+                                    
                                     </td>
                                 </tr>
                         ";

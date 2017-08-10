@@ -199,7 +199,6 @@ $(document).ready(function(){
             var url = frm.attr('action');
             var type = frm.attr('method');
             var name = "";
-            
             $.ajax({
             url:url,
             type:type,
@@ -210,12 +209,16 @@ $(document).ready(function(){
                 name = data.lastname + ", " + data.firstname + " " + data.middlename;
                 $('#mdl_deposit_AID').val(data.AID);
                 $('#mdl_deposit_status').val(data.stat);
+                $('#mdl_deposit_UID').val(data.user_id);
                 $('#deposit_name').val(name);
                 $('#deposit_dept').val(data.dept_name);
                 $('#deposit_prod').val(data.prod_name);
-                $('#deposit_totbal').val(data.total_amount);
-                var date_now = new Date(Date.now());
-                $('#deposit_date').val(date_now.getFullYear()+"-"+date_now.getMonth()+"-"+date_now.getDay());
+                $('#deposit_totbal').val(parseFloat(data.total_amount).toFixed(2));
+                var date_now = new Date();
+                var year = date_now.getFullYear();
+                var month = ((date_now.getMonth().length+1) === 1)? (date_now.getMonth()+1) : '0' + (date_now.getMonth()+1);
+                var day = date_now.getDate();
+                $('#deposit_date').val(year + "-"+ month + "-" + day);
                 $('#deposit_amount').val("");
                 $('#deposit_teller').val(data.nickname);
              }
@@ -309,10 +312,12 @@ $(document).ready(function(){
                         data:frm.serialize(),
                         dataType:"json",
                         success:function(data){
-                            
-                            if(data == true){
+                           
+                            if(data["result"] == true){
                                 swal({title: "Success", text: "Transaction Completed !", type: "success"},
-                                    function(){ 
+                                    function(){
+                                        var win = window.open(data["items"], '_blank');
+                                        win.focus();
                                         location.reload();
                                     }
                                 );
@@ -323,8 +328,6 @@ $(document).ready(function(){
                         });
                     }
 
-                    
-                    
                 } else {
                     swal("Cancelled", "Transaction Cancelled !", "error");
                 }
@@ -354,9 +357,12 @@ $(document).ready(function(){
                 $('#withdrawal_name').val(name);
                 $('#withdrawal_dept').val(data.dept_name);
                 $('#withdrawal_prod').val(data.prod_name);
-                $('#withdrawal_totbal').val(data.total_amount);
-                var date = new Date(Date.now());
-                $('#withdrawal_date').val(date.getFullYear()+" - "+date.getMonth()+" - "+date.getDay());
+                $('#withdrawal_totbal').val(parseFloat(data.total_amount).toFixed(2));
+                var date_now = new Date();
+                var year = date_now.getFullYear();
+                var month = ((date_now.getMonth().length+1) === 1)? (date_now.getMonth()+1) : '0' + (date_now.getMonth()+1);
+                var day = date_now.getDate();
+                $('#withdrawal_date').val(year+"-"+month+"-"+day);
                 $('#withdrawal_amount').val("");
                 $('#withdrawal_teller').val(data.nickname);
                 }
@@ -371,6 +377,10 @@ $(document).ready(function(){
             $('#post-withdrawal-form').on('submit',function(){
             if($('#withdrawal_amount').val() < 1){
                 swal({title: "Error", text: "Transaction Amount should be greater than 0", type: "error"});
+                return false;
+            }
+            if($('#userBalance').val() < $('#withdrawal_amount').val()){
+                swal({title: "Error", text: "not enough balance", type: "error"});
                 return false;
             }
             var btn = $(this);
@@ -431,7 +441,7 @@ $(document).ready(function(){
                                                             }
                                                         );
                                                     }else{
-                                                        swal("Cancelled !", "Transaction error", "error");
+                                                        swal("Cancelled !", "not enough account balance", "error");
                                                     }
                                                 }
                                             });
@@ -609,7 +619,6 @@ $(document).ready(function(){
                 }
             });
             
-            
             return false;
         });
         /**************************************************/
@@ -652,7 +661,6 @@ $(document).ready(function(){
                         }
                     });
                    
-                    
                 } else {
                     swal("Cancelled", "Account Activation Cancelled !", "error");
                 }
@@ -689,15 +697,15 @@ $(document).ready(function(){
                                 data.trans[key]['ID'],
                                 transtype,
                                 data.trans[key]['trans_date'],
-                                data.trans[key]['trans_type'] == 1 ? " "+data.trans[key]['amount'] : "- "+data.trans[key]['amount'],
+                                data.trans[key]['trans_type'] == 1 ? " "+parseFloat(data.trans[key]['amount']).toFixed(2) : "- "+parseFloat(data.trans[key]['amount']).toFixed(2),
                                 data.trans[key]['teller'],
-                                data.trans[key]['total_amount']
+                                parseFloat(data.trans[key]['total_amount']).toFixed(2)
                             ]).draw(false);
                         }
                         
                     }
                         
-                    $('#totbalnce').val(data.totbal.total_amount);
+                    $('#totbalnce').val(parseFloat(data.totbal.total_amount).toFixed(2));
                     $('#viewClientTransACID').val(data.client.ACID);
                     $('#viewClientTransName').val(data.client.lastname + ", " + data.client.firstname + " " + data.client.middlename);
                     $('#viewClientTransProduct').val(data.client.prod_name);
@@ -1255,7 +1263,6 @@ $(document).ready(function(){
                                             }
                                         );
 
-                                    
                                     if(data == true){
                                         }else{
                                             swal("Cancelled !", "there is an error in Updating", "error");
@@ -1591,9 +1598,13 @@ $(document).ready(function(){
               identifier  : 'username',
               rules: [
                 {
-                  type   : 'length[1]',
-                  prompt : 'minimum of 1 Characters'
+                  type   : 'length[4]',
+                  prompt : 'minimum of 4 Characters'
                 },
+                {
+                    type    : 'empty',
+                    prompt  : 'Please enter your username'
+                }
                 
               ]
             },
@@ -1604,10 +1615,7 @@ $(document).ready(function(){
                   type   : 'empty',
                   prompt : 'Please enter your password'
                 },
-                {
-                  type   : 'length[1]',
-                  prompt : 'Your password must be at least 1 characters'
-                }
+               
               ]
             }
           }
@@ -1615,7 +1623,8 @@ $(document).ready(function(){
 
         /*AUTO SUGGEST AMOUNT TRANSACTION WITHDRAWALS/DEPOSITS*/
         $('.btn-autoAmount').on('click',function(){
-            $('#withdrawal_amount').val($(this).text());
-            $('#deposit_amount').val($(this).text());
+            $('#withdrawal_amount').val(parseFloat($(this).text()).toFixed(2));
+            $('#deposit_amount').val(parseFloat($(this).text()).toFixed(2));
         });
+
 });

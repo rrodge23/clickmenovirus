@@ -20,7 +20,6 @@
                     <table id="myTable1" class="table table-striped table-bordered" cellspacing="0" width="100%">
                         <thead>
                             <tr>
-            
                                 <td class="text-center font-roboto color-a2">Transaction ID</td>
                                 <td class="text-center font-roboto color-a2">Account ID</td>
                                 <td class="text-center font-roboto color-a2">Transaction Date</td>
@@ -43,8 +42,8 @@
                                         $id = $r['ID'];
                                         $ACID = $r['ACID'];
                                         $trans_date = $r['trans_date'];
-                                        $amount = $r['amount'];
-                                        $total_amount = $r['total_amount'];
+                                        $amount = number_format($r['amount'],2,'.',',');
+                                        $total_amount = number_format($r['total_amount'],2,'.',',');
                                         $teller = $r['teller'];
                                         if($amount != 0){
                                             
