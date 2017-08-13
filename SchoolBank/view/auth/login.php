@@ -9,7 +9,7 @@
                
                 <div class="card">
                     <div class="card-header" style="background-color:#260552;">
-                        <p style="color:white;font-size:24px;font-family:'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;">
+                        <p style="padding:25px;color:white;font-size:24px;font-family:'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;">
                             SCHOOL BANKING
                         </p>
                     </div>

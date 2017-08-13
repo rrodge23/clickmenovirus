@@ -15,7 +15,7 @@
                     <div class="card" style="background-color: rgba(255,255,255,0.5);margin-top:10%;">
                       
                         <div class="card-content">
-                            <form method="post" action="/app/controller/mdl-accView.php">
+                            <form method="POST" action="/app/controller/mdl-accView.php">
                                 <div class="form-group label-floating">
                                     <label for="usern" class="control-label">Enter Old Password</label>
                                     <input type="password" id="oldpass" class="form-control" name="oldpass" autofocus="autofocus">
@@ -29,7 +29,7 @@
                                     <input id="renewpass" type="password" name="renewpass" class="form-control">
                                 </div>
                                 <div>
-                                    <button data-id="<?=$_SESSION['users']['UID']; ?>" id="btn-changepass" style="background-color: #260552;" type="button" class="btn btn-info btn-block" data-toggle="modal" data-target="#myModal">CHANGE PASSWORD</button>
+                                    <button data-id="<?=$_SESSION['users']['UID']; ?>" id="btn-changepass" style="background-color: #260552;" type="button" class="btn btn-info btn-block">CHANGE PASSWORD</button>
                                 </div>
                             </form>
                         </div>

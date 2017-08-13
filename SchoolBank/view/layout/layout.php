@@ -130,7 +130,11 @@
                                             <i class="material-icons">person</i>
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li id="chnge_pass"><a style="font-weight:bold;font-size:13px !important;" href="/view/page/userDailyTrans.php" class="font-product" style="color:#009785;">My Daily Transaction</a></li>                                
+                                            <?php
+                                                if($_SESSION['users']['user_level'] == 1 || $_SESSION['users']['user_level'] == 2){
+                                                    echo '<li id="chnge_pass"><a style="font-weight:bold;font-size:13px !important;" href="/view/page/userDailyTrans.php" class="font-product" style="color:#009785;">My Daily Transaction</a></li>';
+                                                }
+                                            ?>                                
                                             <li id="chnge_pass"><a style="font-weight:bold;font-size:13px !important;" href="/view/auth/changePass.php" class="font-product" style="color:#009785;">Change Password</a></li>                                
                                             <li id="logout"><a style="font-weight:bold;font-size:13px !important;" href="/app/controller/auth/logout.php" class="font-product" style="color:#009785;">Logout</a></li>                                
                                         </ul>

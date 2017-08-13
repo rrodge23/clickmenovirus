@@ -5,7 +5,7 @@
         <div class="modal-dialog"style="width: 90% !important;margin-top:30px !important;">
 
             <div class="modal-content">
-                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title font-product color-white">ACCOUNT ACTIVATION</h4>
                 </div>
@@ -14,306 +14,330 @@
                     <br>
                     <form method="POST" action="" onsubmit="return false;" id="add-client-form">
                     <input type="hidden" value="addClient" name="mode">
-                        <div class="col-md-12 col-lg-12">
+                      
+                        <div class="col-md-12">
                             <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 style="color:#009785;" class="font-product">NAME:</h3>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-top:50px;">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="firstnameAddC" class="control-label">Firstname</label>
-                                        <input type="text" class="modal-width form-control" id="firstnameAddC" name="firstname" required="required">
-                                        <span class="help-block"></span>
-                                    </div>   
-                                </div>
-                                <div class="row">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="lastnameAddC" class="control-label">Lastname</label>
-                                        <input type="text" class="modal-width form-control" id="lastnameAddC" name="lastname" required="required">
-                                        <span class="help-block"></span>
+                                    <div class="form-group">
+                                        <label for="firstnameAddC" class="col-md-2 control-label">Firstname</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control" id="firstnameAddC" name="firstname" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="middlenameAddC" class="control-label">Middlename</label>
-                                        <input type="text" class="modal-width form-control" id="middlenameAddC" name="middlename" required="required">
-                                        <span class="help-block"></span>
+                                    <div class="form-group">
+                                        <label for="lastnameAddC" class="col-md-2 control-label">Lastname</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control" id="lastnameAddC" name="lastname" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group label-static col-md-12" style="">
-                                        <label for="birthdateAddC" class="control-label" style="padding-left:10px;">Birthdate Y/M/D</label>
-                                        <input type="text" name="birthdate" id="birthdateAddC" class="modal-width datepicker form-control floating-label" style="padding-left:10px !important;" placeholder="">
-                                        <p class="help-block"><code></code></p>
+                                    <div class="form-group">
+                                        <label for="middlenameAddC" class="col-md-2 control-label">Middlename</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control" id="middlenameAddC" name="middlename" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="birthplaceAddC" class="control-label">Birthplace</label>
-                                        <input type="text" class="modal-width form-control" id="birthplaceAddC" name="birthplace" required="required">
-                                        <span class="help-block"></span>
+                                    <div class="form-group">
+                                        <label for="birthdateAddC" class="col-md-2 control-label">Birthdate   (Y-M-D)</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control datepicker" id="birthdateAddC" name="birthdate" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-md-12" style="">
-                                        <label for="genderAddC">Gender</label>
-                                        <select id="genderAddC" class="modal-width form-control select" name="gender">
-                                            <option value='Male'>Male</option>
-                                            <option value='Female'>Female</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <label for="birthplaceAddC" class="col-md-2 control-label">Birthplace</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control" id="birthplaceAddC" name="birthplace" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-md-12" style="">
-                                        <label for="civil_statAddC">Civil Status</label>
-                                        <select id="civil_statAddC" class="modal-width form-control select" name="civil_stat">
-                                            <option value='Single'>Single</option>
-                                            <option value='Married'>Married</option>
-                                            <option value='Divorced'>Divorced</option>
-                                            <option value='Widowed'>Widowed</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <label class="col-md-2 control-label">Gender</label>
+
+                                        <div class="col-md-10">
+                                            <div class="radio radio-primary">
+                                            <label>
+                                                <input type="radio" name="gender" id="genderAddC" value="Male" checked="">
+                                                Male
+                                            </label>
+                                            </div>
+                                            <div class="radio radio-primary">
+                                            <label>
+                                                <input type="radio" name="gender" id="genderAddC" value="Female">
+                                                Female
+                                            </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="civil_statAddC" class="col-md-2 control-label">Civil Status</label>
+                                        <div class="col-md-10">
+                                            <select id="civil_statAddC" class="padding-left10 form-control select" name="civil_stat" placeholder="Please Select your Status">
+                                                <option value='Single'>Single</option>
+                                                <option value='Married'>Married</option>
+                                                <option value='Divorced'>Divorced</option>
+                                                <option value='Widowed'>Widowed</option>
+                                            </select>
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 style="color:#009785;" class="font-product">LOCATION:</h3>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-top:50px;">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="addressAddC" class="control-label">Address</label>
-                                        <input type="text" class="modal-width form-control" id="addressAddC" name="address" required="required">
-                                        <span class="help-block"></span>
+                                    <div class="form-group">
+                                        <label for="addressAddC" class="col-md-2 control-label">Address</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control" id="addressAddC" name="address" required="required">
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-md-12" style="">
-                                        <label for="cityAddC">City/Province</label>
-                                        <select id="cityAddC" class="modal-width form-control select" name="city">
-                                            <option value="Davao City">Davao City</option>
-                                            <option value="Surigao City">Surigao City</option>
-                                            <option value="Caloocan">Caloocan</option>
-                                            <option value="Las Piñas">Las Piñas</option>
-                                            <option value="Makati ">Makati </option>
-                                            <option value="Malabon">Malabon</option>
-                                            <option value="Mandaluyong">Mandaluyong</option>
-                                            <option value="Manila">Manila</option>
-                                            <option value="Marikina">Marikina</option>
-                                            <option value="Muntinlupa">Muntinlupa</option>
-                                            <option value="Navotas">Navotas</option>
-                                            <option value="Parañaque">Parañaque</option>
-                                            <option value="Pasay">Pasay</option>
-                                            <option value="Pasig ">Pasig </option>
-                                            <option value="Quezon City">Quezon City</option>
-                                            <option value="San Juan">San Juan</option>
-                                            <option value="Taguig">Taguig</option>
-                                            <option value="Valenzuela">Valenzuela</option>
-                                            <option value="Butuan">Butuan</option>
-                                            <option value="Cabadbaran">Cabadbaran</option>
-                                            <option value="Bayugan">Bayugan</option>
-                                            <option value="Legazpi">Legazpi</option>
-                                            <option value="Ligao">Ligao</option>
-                                            <option value="Tabaco">Tabaco</option>
-                                            <option value="Isabela">Isabela</option>
-                                            <option value="Lamitan">Lamitan</option>
-                                            <option value="Balanga">Balanga</option>
-                                            <option value="Batangas City">Batangas City</option>
-                                            <option value="Lipa">Lipa</option>
-                                            <option value="Tanauan">Tanauan</option>
-                                            <option value="Baguio">Baguio</option>
-                                            <option value="Tagbilaran">Tagbilaran</option>
-                                            <option value="Malaybalay">Malaybalay</option>
-                                            <option value="Valencia">Valencia</option>
-                                            <option value="Malolos">Malolos</option>
-                                            <option value="Meycauayan">Meycauayan</option>
-                                            <option value="San Jose del Monte">San Jose del Monte</option>
-                                            <option value="Tuguegarao">Tuguegarao</option>
-                                            <option value="Iriga">Iriga</option>
-                                            <option value="Naga">Naga</option>
-                                            <option value="Roxas">Roxas</option>
-                                            <option value="Bacoor">Bacoor</option>
-                                            <option value="Cavite City">Cavite City</option>
-                                            <option value="Dasmariñas">Dasmariñas</option>
-                                            <option value="Imus">Imus</option>
-                                            <option value="Tagaytay">Tagaytay</option>
-                                            <option value="Trece Martires">Trece Martires</option>
-                                            <option value="Bogo">Bogo</option>
-                                            <option value="Carcar">Carcar</option>
-                                            <option value="Cebu City">Cebu City</option>
-                                            <option value="Danao">Danao</option>
-                                            <option value="Lapu-Lapu">Lapu-Lapu</option>
-                                            <option value="Mandaue">Mandaue</option>
-                                            <option value="Naga">Naga</option>
-                                            <option value="Talisay">Talisay</option>
-                                            <option value="Toledo">Toledo</option>
-                                            <option value="Kidapawan">Kidapawan</option>
-                                            <option value="Panabo">Panabo</option>
-                                            <option value="Samal">Samal</option>
-                                            <option value="Tagum">Tagum</option>
-                                            
-                                            <option value="Digos">Digos</option>
-                                            <option value="Mati">Mati</option>
-                                            <option value="Borongan">Borongan</option>
-                                            <option value="Batac">Batac</option>	
-                                            <option value="Laoag">Laoag</option>	
-                                            <option value="Candon">Candon</option>	
-                                            <option value="Vigan">Vigan</option>	
-                                            <option value="Iloilo City">Iloilo City</option>
-                                            <option value="Passi">Passi</option>	
-                                            <option value="Cauayan">Cauayan</option>	
-                                            <option value="Ilagan">Ilagan</option>	
-                                            <option value="Santiago">Santiago</option>
-                                            <option value="Tabuk">Tabuk</option>	
-                                            <option value="San Fernando">San Fernando</option>	
-                                            <option value="Biñan">Biñan</option>	
-                                            <option value="Cabuyao">Cabuyao</option>	
-                                            <option value="Calamba">Calamba</option>
-                                            <option value="San Pablo">San Pablo</option>
-                                            <option value="Santa Rosa">Santa Rosa</option>
-                                            <option value="San Pedro">San Pedro</option>
-                                            <option value="Iligan">Iligan</option>	
-                                            <option value="Marawi">Marawi</option>	
-                                            <option value="Baybay">Baybay</option>	
-                                            <option value="Ormoc">Ormoc</option>	
-                                            <option value="Tacloban">Tacloban</option>	
-                                            <option value="Cotabato City">Cotabato City</option>
-                                            <option value="Masbate City">Masbate City</option>
-                                            <option value="Oroquieta">Oroquieta</option>
-                                            <option value="Ozamiz">Ozamiz</option>
-                                            <option value="Tangub">Tangub</option>
-                                            <option value="Cagayan de Oro">Cagayan de Oro</option>
-                                            <option value="El Salvador">El Salvador</option>
-                                            <option value="Gingoog">Gingoog</option>
-                                            <option value="Bacolod">Bacolod</option>
-                                            <option value="Bago">Bago</option>
-                                            <option value="Cadiz">Cadiz</option>
-                                            <option value="Escalante">Escalante</option>
-                                            <option value="Himamaylan">Himamaylan</option>
-                                            <option value="Kabankalan">Kabankalan</option>
-                                            <option value="La Carlota">La Carlota</option>
-                                            <option value="Sagay">Sagay</option>
-                                            <option value="San Carlos">San Carlos</option>
-                                            <option value="Silay">Silay</option>
-                                            <option value="Sipalay">Sipalay</option>
-                                            <option value="Talisay">Talisay</option>
-                                            <option value="Victorias">Victorias</option>
-                                            <option value="Bais">Bais</option>
-                                            <option value="Bayawan">Bayawan</option>
-                                            <option value="Canlaon">Canlaon</option>
-                                            <option value="Dumaguete">Dumaguete</option>
-                                            <option value="Guihulngan">Guihulngan</option>
-                                            <option value="Tanjay">Tanjay</option>
-                                            <option value="Cabanatuan">Cabanatuan</option>
-                                            <option value="Gapan">Gapan</option>
-                                            <option value="Muñoz">Muñoz</option>
-                                            <option value="Palayan">Palayan</option>
-                                            <option value="San Jose">San Jose</option>
-                                            <option value="Calapan	Oriental">Calapan	Oriental</option>
-                                            <option value="Puerto Princesa">Puerto Princesa</option>
-                                            <option value="Angeles">Angeles</option>
-                                            <option value="Mabalacat ">Mabalacat </option>
-                                            <option value="San Fernando">San Fernando</option>
-                                            <option value="Alaminos">Alaminos</option>
-                                            <option value="Dagupan">Dagupan</option>
-                                            <option value="San Carlos">San Carlos</option>
-                                            <option value="Urdaneta">Urdaneta</option>
-                                            <option value="Lucena">Lucena</option>
-                                            <option value="Tayabas">Tayabas</option>
-                                            <option value="Antipolo">Antipolo</option>
-                                            <option value="Calbayog">Calbayog</option>
-                                            <option value="Catbalogan">Catbalogan</option>
-                                            <option value="Sorsogon City">Sorsogon City</option>
-                                            <option value="General Santos">General Santos</option>
-                                            <option value="Koronadal">Koronadal</option>
-                                            <option value="Maasin">Maasin</option>
-                                            <option value="Tacurong">Tacurong</option>
-                                            
-                                            <option value="Bislig">Bislig</option>
-                                            <option value="Tandag">Tandag</option>
-                                            <option value="Tarlac City">Tarlac City</option>
-                                            <option value="Olongapo">Olongapo</option>
-                                            <option value="Dapitan">Dapitan</option>
-                                            <option value="Dipolog">Dipolog</option>
-                                            <option value="Pagadian">Pagadian</option>
-                                            <option value="Zamboanga City">Zamboanga City</option>
-                                        </select>
+                                    <div class="form-group">
+                                        <label for="civil_statAddC" class="col-md-2 control-label">City / Province</label>
+                                        <div class="col-md-10">
+                                            <select id="cityAddC" class="padding-left10 form-control select" name="city">
+                                                <option value="Davao City">Davao City</option>
+                                                <option value="Surigao City">Surigao City</option>
+                                                <option value="Caloocan">Caloocan</option>
+                                                <option value="Las Piñas">Las Piñas</option>
+                                                <option value="Makati ">Makati </option>
+                                                <option value="Malabon">Malabon</option>
+                                                <option value="Mandaluyong">Mandaluyong</option>
+                                                <option value="Manila">Manila</option>
+                                                <option value="Marikina">Marikina</option>
+                                                <option value="Muntinlupa">Muntinlupa</option>
+                                                <option value="Navotas">Navotas</option>
+                                                <option value="Parañaque">Parañaque</option>
+                                                <option value="Pasay">Pasay</option>
+                                                <option value="Pasig ">Pasig </option>
+                                                <option value="Quezon City">Quezon City</option>
+                                                <option value="San Juan">San Juan</option>
+                                                <option value="Taguig">Taguig</option>
+                                                <option value="Valenzuela">Valenzuela</option>
+                                                <option value="Butuan">Butuan</option>
+                                                <option value="Cabadbaran">Cabadbaran</option>
+                                                <option value="Bayugan">Bayugan</option>
+                                                <option value="Legazpi">Legazpi</option>
+                                                <option value="Ligao">Ligao</option>
+                                                <option value="Tabaco">Tabaco</option>
+                                                <option value="Isabela">Isabela</option>
+                                                <option value="Lamitan">Lamitan</option>
+                                                <option value="Balanga">Balanga</option>
+                                                <option value="Batangas City">Batangas City</option>
+                                                <option value="Lipa">Lipa</option>
+                                                <option value="Tanauan">Tanauan</option>
+                                                <option value="Baguio">Baguio</option>
+                                                <option value="Tagbilaran">Tagbilaran</option>
+                                                <option value="Malaybalay">Malaybalay</option>
+                                                <option value="Valencia">Valencia</option>
+                                                <option value="Malolos">Malolos</option>
+                                                <option value="Meycauayan">Meycauayan</option>
+                                                <option value="San Jose del Monte">San Jose del Monte</option>
+                                                <option value="Tuguegarao">Tuguegarao</option>
+                                                <option value="Iriga">Iriga</option>
+                                                <option value="Naga">Naga</option>
+                                                <option value="Roxas">Roxas</option>
+                                                <option value="Bacoor">Bacoor</option>
+                                                <option value="Cavite City">Cavite City</option>
+                                                <option value="Dasmariñas">Dasmariñas</option>
+                                                <option value="Imus">Imus</option>
+                                                <option value="Tagaytay">Tagaytay</option>
+                                                <option value="Trece Martires">Trece Martires</option>
+                                                <option value="Bogo">Bogo</option>
+                                                <option value="Carcar">Carcar</option>
+                                                <option value="Cebu City">Cebu City</option>
+                                                <option value="Danao">Danao</option>
+                                                <option value="Lapu-Lapu">Lapu-Lapu</option>
+                                                <option value="Mandaue">Mandaue</option>
+                                                <option value="Naga">Naga</option>
+                                                <option value="Talisay">Talisay</option>
+                                                <option value="Toledo">Toledo</option>
+                                                <option value="Kidapawan">Kidapawan</option>
+                                                <option value="Panabo">Panabo</option>
+                                                <option value="Samal">Samal</option>
+                                                <option value="Tagum">Tagum</option>
+                                                <option value="Digos">Digos</option>
+                                                <option value="Mati">Mati</option>
+                                                <option value="Borongan">Borongan</option>
+                                                <option value="Batac">Batac</option>	
+                                                <option value="Laoag">Laoag</option>	
+                                                <option value="Candon">Candon</option>	
+                                                <option value="Vigan">Vigan</option>	
+                                                <option value="Iloilo City">Iloilo City</option>
+                                                <option value="Passi">Passi</option>	
+                                                <option value="Cauayan">Cauayan</option>	
+                                                <option value="Ilagan">Ilagan</option>	
+                                                <option value="Santiago">Santiago</option>
+                                                <option value="Tabuk">Tabuk</option>	
+                                                <option value="San Fernando">San Fernando</option>	
+                                                <option value="Biñan">Biñan</option>	
+                                                <option value="Cabuyao">Cabuyao</option>	
+                                                <option value="Calamba">Calamba</option>
+                                                <option value="San Pablo">San Pablo</option>
+                                                <option value="Santa Rosa">Santa Rosa</option>
+                                                <option value="San Pedro">San Pedro</option>
+                                                <option value="Iligan">Iligan</option>	
+                                                <option value="Marawi">Marawi</option>	
+                                                <option value="Baybay">Baybay</option>	
+                                                <option value="Ormoc">Ormoc</option>	
+                                                <option value="Tacloban">Tacloban</option>	
+                                                <option value="Cotabato City">Cotabato City</option>
+                                                <option value="Masbate City">Masbate City</option>
+                                                <option value="Oroquieta">Oroquieta</option>
+                                                <option value="Ozamiz">Ozamiz</option>
+                                                <option value="Tangub">Tangub</option>
+                                                <option value="Cagayan de Oro">Cagayan de Oro</option>
+                                                <option value="El Salvador">El Salvador</option>
+                                                <option value="Gingoog">Gingoog</option>
+                                                <option value="Bacolod">Bacolod</option>
+                                                <option value="Bago">Bago</option>
+                                                <option value="Cadiz">Cadiz</option>
+                                                <option value="Escalante">Escalante</option>
+                                                <option value="Himamaylan">Himamaylan</option>
+                                                <option value="Kabankalan">Kabankalan</option>
+                                                <option value="La Carlota">La Carlota</option>
+                                                <option value="Sagay">Sagay</option>
+                                                <option value="San Carlos">San Carlos</option>
+                                                <option value="Silay">Silay</option>
+                                                <option value="Sipalay">Sipalay</option>
+                                                <option value="Talisay">Talisay</option>
+                                                <option value="Victorias">Victorias</option>
+                                                <option value="Bais">Bais</option>
+                                                <option value="Bayawan">Bayawan</option>
+                                                <option value="Canlaon">Canlaon</option>
+                                                <option value="Dumaguete">Dumaguete</option>
+                                                <option value="Guihulngan">Guihulngan</option>
+                                                <option value="Tanjay">Tanjay</option>
+                                                <option value="Cabanatuan">Cabanatuan</option>
+                                                <option value="Gapan">Gapan</option>
+                                                <option value="Muñoz">Muñoz</option>
+                                                <option value="Palayan">Palayan</option>
+                                                <option value="San Jose">San Jose</option>
+                                                <option value="Calapan	Oriental">Calapan	Oriental</option>
+                                                <option value="Puerto Princesa">Puerto Princesa</option>
+                                                <option value="Angeles">Angeles</option>
+                                                <option value="Mabalacat ">Mabalacat </option>
+                                                <option value="San Fernando">San Fernando</option>
+                                                <option value="Alaminos">Alaminos</option>
+                                                <option value="Dagupan">Dagupan</option>
+                                                <option value="San Carlos">San Carlos</option>
+                                                <option value="Urdaneta">Urdaneta</option>
+                                                <option value="Lucena">Lucena</option>
+                                                <option value="Tayabas">Tayabas</option>
+                                                <option value="Antipolo">Antipolo</option>
+                                                <option value="Calbayog">Calbayog</option>
+                                                <option value="Catbalogan">Catbalogan</option>
+                                                <option value="Sorsogon City">Sorsogon City</option>
+                                                <option value="General Santos">General Santos</option>
+                                                <option value="Koronadal">Koronadal</option>
+                                                <option value="Maasin">Maasin</option>
+                                                <option value="Tacurong">Tacurong</option>
+                                                <option value="Bislig">Bislig</option>
+                                                <option value="Tandag">Tandag</option>
+                                                <option value="Tarlac City">Tarlac City</option>
+                                                <option value="Olongapo">Olongapo</option>
+                                                <option value="Dapitan">Dapitan</option>
+                                                <option value="Dipolog">Dipolog</option>
+                                                <option value="Pagadian">Pagadian</option>
+                                                <option value="Zamboanga City">Zamboanga City</option>
+                                            </select>
+                                            <span class="help-block"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="zipcodeAddC" class="control-label">Zip Code</label>
-                                        <input type="text" class="modal-width form-control" id="zipcodeAddC" name="zipcode" required="required" pattern="[0-9]{4}">
-                                        <span class="help-block">only composite numbers between 0 - 9</span>
+                                    <div class="form-group">
+                                        <label for="zipcodeAddC" class="col-md-2 control-label">Zip Code</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control input-medium bfh-phone" id="zipcodeAddC" name="zipcode" required="required" pattern="[0-9]{4}" data-format="dddd">
+                                            <span class="help-block">only composit numbers between 0-9. 4 digits required</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 style="color:#009785;" class="font-product">CONTACT:</h3>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-top:50px;margin-bottom:50px;">
-                                    <div class="col-md-12">
-                                        <input type="text" name="contact_no" id="contact_noAddC" class="input-medium bfh-phone modal-width" data-format="+ (dd) ddd-dddd-ddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;">
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-bottom:50px;">
-                                    <div class="col-md-12">
-                                        <input type="text" name="tel_no" id="tel_noAddC" class="input-medium bfh-phone modal-width" data-format="(ddd) ddd-dddd" required="required" style="border:none;border-bottom:1px solid #ddd !important;" placeholder="Telephone Number">
+                                    <div class="form-group">
+                                        <label for="zipcodeAddC" class="col-md-2 control-label">Contact Number</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control input-medium bfh-phone" id="contact_noAddC" name="contact_no" required="required" data-format="+ (63) ddd-dddd-ddd">
+                                            <span class="help-block">only composit numbers between 0-9. 11 digits required</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group label-floating col-md-12">
-                                        <label for="emailAddC" class="control-label">Email address</label>
-                                        <input type="email" class="modal-width form-control" id="emailAddC" name="email" required="required">
-                                        <span class="help-block">Please enter a valid email address</span>
+                                    <div class="form-group">
+                                        <label for="zipcodeAddC" class="col-md-2 control-label">Telephone Number</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="padding-left10 form-control input-medium bfh-phone" id="tel_noAddC" name="tel_no" required="required" data-format="(ddd) ddd-dddd">
+                                            <span class="help-block">only composit numbers between 0-9.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label for="emailAddC" class="col-md-2 control-label">Email address</label>
+                                        <div class="col-md-10">
+                                            <input type="email" class="padding-left10 form-control" id="emailAddC" name="email" required="required">
+                                            <span class="help-block">Please enter a valid email address</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="row">
-                                    <div class="col-md-12">
-                                        <h3 style="color:#009785;" class="font-product">Department:</h3>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-top:50px;">
-                                    <div class="form-group col-md-12" style="">
-                                        <label for="productAddC">Client Type</label>
-                                        <select id="productAddC" class="modal-width form-control select" name="product" >
-                                            <?php
-                                                if($ddprod){
-                                                    while($p = $ddprod->fetch_assoc()){
-                                                        $prod_id = $p['PID'];
-                                                        $product = $p['prod_name'];
-                                                        echo "<option value='$prod_id'>$product</option>";
-                                                    }
-                                                }                          
-                                            ?>
-                                        </select>
+                                    <div class="form-group">
+                                        <label for="productAddC" class="col-md-2 control-label">Client Type</label>
+                                        <div class="col-md-10">     
+                                            <select id="productAddC" class="padding-left10 form-control select" name="product" placeholder="Please Select your Select Client type">
+                                                <?php
+                                                    if($ddprod){
+                                                        while($p = $ddprod->fetch_assoc()){
+                                                            $prod_id = $p['PID'];
+                                                            $product = $p['prod_name'];
+                                                            echo "<option value='$prod_id'>$product</option>";
+                                                        }
+                                                    }                          
+                                                ?>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-md-12" style="">
-                                        <label for="departmentAddC">Section</label>
-                                        <select id="departmentAddC" class="modal-width form-control select" name="department" required="required" placeholder="Select Section">
-                                            <?php
-                                                if($dept){
-                                                    while($d = $dept->fetch_assoc()){
-                                                        $dept_id = $d['DID'];
-                                                        $department = $d['dept_name'];
-                                                        echo "<option value='$dept_id'>$department</option>";
-                                                    }
-                                                }                          
-                                            ?>
-                                        </select>
+                                    <div class="form-group">
+                                        <label for="departmentAddC" class="col-md-2 control-label">Section</label>
+                                        <div class="col-md-10">     
+                                            <select id="departmentAddC" class="padding-left10 form-control select" name="department" placeholder="Please Select your Select Section">
+                                                <?php
+                                                    if($dept){
+                                                        while($d = $dept->fetch_assoc()){
+                                                            $dept_id = $d['DID'];
+                                                            $department = $d['dept_name'];
+                                                            echo "<option value='$dept_id'>$department</option>";
+                                                        }
+                                                    }                          
+                                                ?>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="modal-footer">
                             
                             <table style="float:right !important;">
@@ -342,7 +366,7 @@
       <div class="modal-dialog"style="width: 90% !important;margin-top:30px !important;">
 
             <div class="modal-content">
-                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">ACCOUNT INFO</h4>
                     <?php
@@ -371,19 +395,20 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div>
-                                    <h3 style="color:#009785;" class="font-product margin-left-30">ACCOUNT:</h3>
+                                    <h3 style="color:#260552;" class="font-product margin-left-30">ACCOUNT:</h3>
                                 </div>
-                                <div>
+                               
+                                <div class='form-group'>
                                     <label for='ACID' class='control-label col-md-4'>Account ID</label>
                                     <div class='col-md-8'>
                                         <input readonly='readonly' type='text' class='mdl-user-input-update form-control padding-left10 ' id='ACID' name='ACID' required='required'>
-                                        <span class='help-block'></code></span>
+                                        <span class='help-block'><code></code></span>
                                     </div>
                                 </div>
                                 <div class='form-group'>
                                     <label for='stat' class='control-label col-md-4'>Status</label>
                                     <div class='col-md-8'>
-                                        <input readonly='readonly' type='text' class='form-control padding-left10 ' id='stat' name='stat' required='required'>
+                                        <input readonly='readonly' type='text' class='mdl-user-input-update form-control padding-left10 ' id='stat' name='stat' required='required'>
                                         <span class='help-block'><code></code></span>
                                     </div>
                                 </div>
@@ -725,7 +750,7 @@
         <div class="modal-dialog">
             
             <div class="modal-content" style="width: 140% !important;">
-                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">INFO</h4>
                 </div>
@@ -792,7 +817,7 @@
 
             
             <div class="modal-content" style="width: 140% !important;">
-                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">Add Section</h4>
                 </div>
@@ -844,7 +869,7 @@
             
             <div class="modal-content" style="width: 140% !important;">
 
-                <div class="modal-header box-shadow" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header box-shadow" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">Add Client Type</h4>
                 </div>
@@ -897,7 +922,7 @@
 
             <div class="modal-content" style="width: 140% !important;">
 
-                <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">INFO</h4>
                 </div>
@@ -976,7 +1001,7 @@
             
             <div class="modal-content" style="width: 140% !important;">
 
-                <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+                <div class="modal-header" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                    
                     <h4 class="modal-title float-left color-white font-product">UPDATE</h4>
                 </div>
@@ -1272,11 +1297,25 @@
             </div>
             
             <div class="container-fluid">
-                
+                    <?php
+                        $Balance = 0;
+                        if($userDailyTransactionTableList){
+                            while($r = $userDailyTransactionTableList->fetch_assoc()){
+                                
+                                $amount = number_format($r['amount'],2,'.',',');
+                                
+                                if($r['trans_type'] == 1){
+                                    $Balance+=$amount;
+                                }else{
+                                    $Balance-=$amount;
+                                }
+                            }
+                        }
+                    ?>
                     <form method="POST" action="/app/controller/mdl-clientView.php" id="post-withdrawal-form" onsubmit="return false;">
                     <input type="hidden" name="mode" value="transPostWithdrawal">
                     <input type="hidden" id="withdrawal_teller" name="withdrawal_teller">
-                    <input type="hidden" id="userBalance" name="userBalance">
+                    <input type="hidden" id="userBalance" name="userBalance" value="<?=$Balance;?>">
                     <div class="row" style="margin-top:50px;">
                         <div class="col-md-12" style="">
                             <div class="col-md-6">
@@ -1399,7 +1438,7 @@
 
         <div class="modal-content" style="background-color:#white;">
 
-            <div class="modal-header" style="background-color: #009785 !important;line-height:75px !important;height:75px !important;">
+            <div class="modal-header" style="background-color: #260552 !important;line-height:75px !important;height:75px !important;">
                 
                 <h4 class="modal-title float-left color-white font-product">SEARCH</h4>
             </div>

@@ -27,6 +27,10 @@
     if($_POST['mode'] == "userChangePass"){
         $dbUser = new modelUser();
         $userData = $dbUser->userChangePassword($_POST);
+        if($userData == true){
+            $_SESSION['users']['password'] == $_POST['newpass'];
+        }
+
         echo json_encode($userData);
     }
 

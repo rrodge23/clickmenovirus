@@ -57,6 +57,7 @@
             <div class="col-xs-6 tabs">
               <a href="#" class="active" id="login-form-link"><div class="login">LOGIN</div></a>
             </div>
+            <a href="/getFile/postTransaction.php">click</a>
             <div class="col-xs-6 tabs">
               <a href="#" id="register-form-link"><div class="register">REGISTER</div></a>
             </div>

@@ -7,8 +7,10 @@
         include_once("/view/auth/login.php");
         exit;
     }
+    $Balance = 0;
 ?>
    <div class="row">
+        
         <table id="myTable2" class="table table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
                 <tr>
@@ -29,9 +31,16 @@
                             $id = $r['ID'];
                             $ACID = $r['ACID'];
                             $trans_date = $r['trans_date'];
-                            $trans_type = $r['trans_type'];
-                            $amount = $r['amount'];
-                            $total_amount = $r['total_amount'];
+                            $amount = number_format($r['amount'],2,'.',',');
+                            $total_amount = number_format($r['total_amount'],2,'.',',');
+                            
+                            if($r['trans_type'] == 1){
+                                $Balance+=$amount;
+                                $trans_type = "Deposit";
+                            }else{
+                                $Balance-=$amount;
+                                $trans_type = "Withdrawal";
+                            }
                             echo "
                                 <tr>  
                                     <td class='text-center checked'>$id</td>
@@ -49,6 +58,7 @@
                 ?>
             </tbody>
         </table>
+        <h1>Total Balance:<?=number_format($Balance,2,'.',',')?></h1>
    </div>
 <?php
     include "../../view/base/footer.php";

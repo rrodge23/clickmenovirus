@@ -43,6 +43,7 @@
             </h4>
             <p>
                 Create an announcement to all users <strong>HERE !</strong>
+                <?=$_SESSION['users']['password'];?>
             </p>
         </div>
         <div class="alert-message alert-message-success box-shadow-panel">

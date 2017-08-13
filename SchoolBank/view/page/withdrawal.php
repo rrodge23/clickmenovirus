@@ -5,7 +5,12 @@
 ?>
     
     <div class="row">
+        <?php
+            $a = 1;
+            echo $a;
         
+        
+        ?>
     </div>
 <?php
     include "../../view/base/footer.php";

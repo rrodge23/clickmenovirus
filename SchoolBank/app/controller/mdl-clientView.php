@@ -36,7 +36,13 @@
 
     if($_POST['mode'] == "transPostDeposit"){
         $dbClient = new modelClient();
-        $link = "/getFile/postTransaction.php?accid=" . $_POST['ACCID'] . "&name=" . $_POST['deposit_name'] . "&section=" .$_POST['deposit_dept'] . "&clientType=" . $_POST['deposit_prod'];
+        $link = "/getFile/postTransaction.php?accid=" . $_POST['ACCID'] .
+                                             "&name=" . $_POST['deposit_name'] .
+                                             "&section=" . $_POST['deposit_dept'] .
+                                             "&clientType=" . $_POST['deposit_prod'] . 
+                                             "&dateGenerated=" . $_POST['deposit_date'] .
+                                             "&amount=" . $_POST['deposit_amount'] .
+                                             "&transType=" . 1;
         $clientData = array('result' => $dbClient->postDeposit($_POST), 'items' => $link);
         echo json_encode($clientData);
     }

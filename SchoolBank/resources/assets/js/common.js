@@ -625,7 +625,15 @@ $(document).ready(function(){
         /******************** ADD CLIENT ************************/
         $('#add-client-form').on('submit',function(){
             var btn = $(this);
-            
+            var bdate = new Date($('#birthdateAddC').val());
+            var bdateYear = bdate.getFullYear();
+            var today = new Date(Date.now());
+            var todayYear = today.getFullYear();
+           
+            if(bdateYear == todayYear){
+                swal("Error", "Invalid Birth Date", "error");
+                return false;
+            }
             swal({
                 title: "Are you sure?",
                 text: "You want to Activate this Account ?",
@@ -715,6 +723,7 @@ $(document).ready(function(){
             });
             
             $('#mdl--client-Account-details').modal('show');
+            
             return false;
         });
 
@@ -741,7 +750,7 @@ $(document).ready(function(){
                 confirmButtonText: "Update",
                 cancelButtonText: "Cancel",
                 closeOnConfirm: false,
-                closeOnCancel: false,
+                closeOnCancel: true,
                 allowOutsideClick: false,
                 },
                 function(isConfirm) {
@@ -894,7 +903,7 @@ $(document).ready(function(){
                 confirmButtonText: "Add",
                 cancelButtonText: "Cancel",
                 closeOnConfirm: false,
-                closeOnCancel: false,
+                closeOnCancel: true,
                 allowOutsideClick: false,
                 },
                 function(isConfirm) {
