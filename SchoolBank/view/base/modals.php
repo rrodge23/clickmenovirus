@@ -222,7 +222,6 @@
                                             <option value="Zamboanga City">Zamboanga City</option>
                                         </select>
                                     </div>
-
                                     <div class="form-group label-floating margin-left-30 modal-width">
                                         <label for="zipcodeAddC" class="control-label">Zip Code</label>
                                         <input type="text" class="form-control" id="zipcodeAddC" name="zipcode" required="required" pattern="[0-9]{4}">
